@@ -1,9 +1,14 @@
 body {
 	background-color: #E8EDA8;
+	color: #0E4413;
+	font-family: Helvetica, Arial, sans-serif;
 }
+
 
 .nav {
 	background-color: #0E4413;
+	width: 100%;
+	height: 50px;
 }
 
 .nav ul {
@@ -18,6 +23,11 @@ body {
 
 .nav a {
 	color: #E8EDA8;;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: underline;
 }
 
 .article {
@@ -31,13 +41,4 @@ img {
 	width: 25%;
 	height: 25%;
 	border-radius: 15px;
-}
-
-
-h1,
-h2,
-h3,
-li {
-	color: #0E4413;
-	font-family: sans-serif;
 }
