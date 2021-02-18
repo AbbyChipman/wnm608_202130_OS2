@@ -1,0 +1,43 @@
+body {
+	background-color: #E8EDA8;
+}
+
+.nav {
+	background-color: #0E4413;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	color: #E8EDA8;;
+}
+
+.article {
+	background-color: #ffffff80;
+	width:75%;
+	border-radius: 15px;
+}
+
+img {
+	float: left;
+	width: 25%;
+	height: 25%;
+	border-radius: 15px;
+}
+
+
+h1,
+h2,
+h3,
+li {
+	color: #0E4413;
+	font-family: sans-serif;
+}
