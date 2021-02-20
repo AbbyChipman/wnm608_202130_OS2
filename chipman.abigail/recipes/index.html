@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--testing out Emmet. Page structure from AAU class video-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="recipe.css">
+	<!-- used elements from in class walkthrough on 2/18/2021 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="lib/css/styleguide.css">
+	 <link rel="stylesheet" href="css/recipe.css">
 	<title>College Cooking</title>
 </head>
-<body>
-	<nav class="nav">
-		<ul>
-			<li><a href="#recipe1">Breakfast</a></li>
-			<li><a href="#recipe2">Lunch</a></li>
-			<li><a href="#recipe3">Dinner</a></li>
-		</ul>
-	</nav>
-	<header>
-		<h1>College Cooking</h1>
-		<h2>please note: this is a work in progress. Text alignment and other issues will be improved shortly!</h2>
-		<h3>Being in college often means being short on time and money. Here are three dishes that are easy on the wallet and the schedule!</h3>
+<body><a name="top"></a>
+	<header class="navbar">
+		<div class="container display-flex flex-align-center">
+			<div class="flex-none">
+				<h1>College Cooking</h1>
+			</div>
+
+			<div class="flex-stretch"></div>
+
+			<nav class="nav flex-none">
+				<ul class="display-flex">
+					<li><a href="#breakfast">Breakfast</a></li>
+					<li><a href="#lunch">Lunch</a></li>
+					<li><a href="#dinner">Dinner</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-		<article id="recipe1" class="article">
-			<img src="img/breakfast.JPG" alt="bowl of cereal">
-			<h2>Breakfast - Cereal</h2>
-				<h3>You will need:</h3>
+	<h3>Being in college often means being short on time and money. Here are three recipes that are easy on the wallet as well as the schedule!</h3>
+	<div class="container display-flex flex-stretch flex-align-center flex-justify-center">
+		<article id="breakfast" class="article card soft">
+			<img src="img/breakfast.JPG">
+			<div class="article-body">
+				<h2>Breakfast - Cereal</h2>
+				<p>For quick energy in the mornings</p>
+				<h3>What you'll need:</h3>
 				<ul>
-					<li>cereal</li>
-					<li>milk</li>
-					<li>bowl</li>
-					<li>spoon</li>
+					<li>Cereal (I like the ones that turn the milk chocolatey</li>
+					<li>Milk</li>
+					<li>Bowl</li>
+					<li>Spoon</li>
 				</ul>
 				<h3>Directions:</h3>
 				<ol>
-					<li>pour cereal into bowl</li>
-					<li>pour milk onto cereal</li>
-					<li>use spoon to eat</li>
+					<li>Pour cereal into bowl</li>
+					<li>Pour milk onto cereal</li>
+					<li>Use spoon to eat</li>
+					<li>Enjoy the chocolate milk afterward!</li>
 				</ol>
-			</article>
-			<article id="recipe2" class="article">
-				<img src="img/lunch.JPG" alt="tuna sandwich">
-				<h2>Lunch - Tuna Sandwich</h2>
-				<h3>You will need:</h3>
+				<a href="#top">Back to Top</a>
+			</div>
+		</article>
+		<article id="lunch" class="article card soft">
+			<img src="img/lunch.JPG">
+			<h2>Lunch - Tuna Sandwich</h2>
+			<div class="article-body">
+				<h3>What you'll need:</h3>
 				<ul>
-					<li>tuna (can or pouch)</li>
-					<li>2 TBSP mayonnaise (or enough for a creamy texture)</li>
-					<li>onion powder to taste</li>
-					<li>pickles (optional)</li>
-					<li>2 slices bread</li>
+					<li>1 can or pouch of tuna (any style)</li>
+					<li>1 TBSP Mayonnaise (enough for creamy texture)</li>
+					<li>Onion Powder to taste</li>
+					<li>Chopped Pickles (optional)</li>
+					<li>2 slices of bread</li>
 				</ul>
 				<h3>Directions:</h3>
 				<ol>
-					<li>empty tuna can/pouch into bowl</li>
-					<li>add mayonnaise and stir well</li>
-					<li>mix in onion powder</li>
-					<li>add pickles (optional)</li>
-					<li>spread mixture on bread</li>
-					<li>enjoy!</li>
+					<li>Empty contents of tuna can/pouch into bowl</li>
+					<li>Stir in mayonnaise</li>
+					<li>stir in onion powder</li>
+					<li>Add pickles if desired</li>
+					<li>Spread mixture on bread</li>
+					<li>Enjoy</li>
 				</ol>
-			</article>
-			<article id="recipe3" class="article">
-				<img src="img/dinner.JPG" alt="bowl of noodles">
-				<h2>Dinner - Chicken Noodles</h2>
-				<h3>You will need:</h3>
+				<a href="#top">Back to Top</a>
+			</div>
+		</article>
+		<article id="dinner" class="article card soft">
+			<img src="img/dinner.JPG">
+			<h2>Dinner - Chicken Noodles</h2>
+			<div class="article-body">
+				<h3>What you'll need:</h3>
 				<ul>
-					<li>One (1) package Lipton Pasta Sides (Chicken flavor)</li>
+					<li>1 package Lipton Pasta Sides - Chicken Flavor</li>
 					<li>2 cups water</li>
 					<li>1 TBSP butter or margarine (optional)</li>
 				</ul>
 				<h3>Directions:</h3>
 				<ol>
-					<li>Bring water and butter/margarine to boil</li>
-					<li>Add contents of pouch to boiling water</li>
-					<li>Cook at medium-high heat for 5 - 7 minutes or until tender</li>
-					<li>Let stand (no heat) for 2 minutes</li>
-					<li>Serve and Enjoy!</li>
+					<li>Bring water and butter/margarine to a boil</li>
+					<li>Add contents of noodle package</li>
+					<li>Cook on medium-high heat 5 - 7 minutes or until tender</li>
+					<li>Let stand (no heat) for two minutes</li>
+					<li>Serve and enjoy</li>
 				</ol>
-			</article>
+				<a href="#top">Back to Top</a>
+			</div>
+		</article>
+	</div>
 </body>
 </html>

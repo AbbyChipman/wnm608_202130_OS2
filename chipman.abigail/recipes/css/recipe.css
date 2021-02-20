@@ -1,0 +1,43 @@
+/*some elements copied from styleguide.css, written by Hamilton Cline*/
+
+:root {
+   --color-neutral-light:#EAF4CC;
+   --color-neutral-medium:#49A65C;
+   --color-neutral-dark:#032E0C;
+
+   --color-white:#fff;
+   --color-black:#111;
+
+
+   --header-height:4rem;
+
+
+   --font-sans: Helvetica, Arial, sans-serif;
+   --font-serif: Cambria, Georgia, "Times New Roman", serif;
+}
+
+body {
+	background-color: #EAF4CC;
+}
+
+.container {
+   max-width:1200px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+a {
+	float:right;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:var(--color-neutral-light);
+
+}
+
+p {
+	float:right;
+}
+
