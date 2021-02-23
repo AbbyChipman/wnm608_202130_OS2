@@ -1,3 +1,7 @@
 body {
-	background-color:blue;
+	background: linear-gradient(#FDEDEC, #FCFDEC, #ECFDF6, #F6ECFD);
+}
+
+.navbar {
+	background: linear-gradient(to left, #2D0848, #440C6B);
 }
