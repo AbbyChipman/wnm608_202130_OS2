@@ -7,6 +7,6 @@
 - http://www.abigailchipman.com
 - http://www.abigailchipman.com/aau/wnm608/chipman.abigail
 
-##recipe page
+## recipe page
 
 - http://www.abigailchipman.com/aau/wnm608/recipes
