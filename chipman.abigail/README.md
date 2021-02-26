@@ -9,4 +9,4 @@
 
 ## recipe page
 
-- http://www.abigailchipman.com/aau/wnm608/recipes
+- http://www.abigailchipman.com/aau/wnm608/chipman.abigail/recipes/
