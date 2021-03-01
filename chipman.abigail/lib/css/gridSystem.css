@@ -118,3 +118,11 @@
    .col-xl-11 { grid-column: span 11; }
    .col-xl-12 { grid-column: span 12; }
 }
+
+/* image responsiveness */
+
+.responsive {
+   width: 100%;
+   /*max-width: 200px;*/
+   height: auto;
+}

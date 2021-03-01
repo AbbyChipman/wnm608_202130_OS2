@@ -1,4 +1,4 @@
-/* CSS RESETS */
+ /* CSS RESETS */
 
 *, *::before, *::after {
    box-sizing:border-box;
@@ -11,7 +11,7 @@
 
    --color-white:#fff;
    --color-black:#111;
-
+ 
 
    --header-height:5rem;
 
@@ -44,7 +44,23 @@ a:hover {
    text-decoration:underline;
 }
 
+/* RESPONSIVE*/
 
+@media (max-width: 500px) {
+   :root {
+      --header-height: 3rem;
+   }
+
+   .view-window {
+      position:relative;
+      overflow:hidden;
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      height:20 vh;
+   }
+}
 
 
 /* LAYOUT CLASSES */
