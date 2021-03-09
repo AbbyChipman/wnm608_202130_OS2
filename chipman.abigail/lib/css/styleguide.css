@@ -99,18 +99,7 @@ a:hover {
 
 /* COMPONENT CLASSES */
 
-.navbar {
-   background-color:var(--color-neutral-dark);
-   color:var(--color-white);
-   line-height:var(--header-height);
-}
-.navbar h1 {
-   font-family:var(--font-sans);
-   font-size:2em;
-   font-weight: bolder;
-   margin:0;
-}
-
+/* NAV */
 .nav ul,
 .navbar ul {
    list-style-type:none;
@@ -118,10 +107,44 @@ a:hover {
    padding-left:0;
 }
 
+.nav a {
+   display:block;
+   padding:0.2em 0.5em;
+}
+.nav a:hover {
+   background-color:var(--color-main-medium);
+   color:var(--color-white);
+   text-decoration:none;
+}
+
+   .nav.flex ul,
+   .nav.stretch ul {
+      display:flex;
+   }
+
+   .nav.stretch li {
+      flex:1 1 auto;
+      text-align:center;
+   }
+
+
+/* Navbar */
+.navbar {
+   background-color:var(--color-neutral-dark);
+   color:var(--color-white);
+   line-height:var(--header-height);
+}
+.navbar h1 {
+   font-family:var(--font-sans);
+   font-size:1em;
+   margin:0;
+}
+
 .navbar a {
    display:block;
    padding:0 0.5em;
 }
+
 
 .button {
    background-color: #D2B4DE;
@@ -174,3 +197,10 @@ a:hover {
    .card.flat {
       padding:0;
    }
+
+/* WELL */
+.well {
+   background-color:var(--color-neutral-medium);
+   padding:0.5em;
+   border-radius:0.2em;
+}
