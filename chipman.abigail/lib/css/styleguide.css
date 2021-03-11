@@ -7,17 +7,34 @@
 :root {
    --color-neutral-light:#e4e2e9;
    --color-neutral-medium:#8c8894;
-   --color-neutral-dark:#440C6B;
+   --color-neutral-dark:#423f4a;
+
+   --color-main-light:#e2c7ef;
+   --color-main-medium:#d189ef;
+   --color-main-dark:#6a1787;
+
+   --color-accent-light:#f7e2b7;
+   --color-accent-medium:#ffcc42;
+   --color-accent-dark:#bf9932;
+
+   --color-secondary-light:#eef9d7;
+   --color-secondary-medium:#caea83;
+   --color-secondary-dark:#80a333;
+
+   --color-text-main:#2e0a3a;
+   --color-text-accent:#403311;
+   --color-text-secondary:#233009;
 
    --color-white:#fff;
    --color-black:#111;
  
 
-   --header-height:5rem;
+   --header-height:4rem;
 
 
-   --font-sans: 'Quicksand', sans-serif; 
-   --font-serif: 'Suez One', serif;
+   --font-display: 'Mountains of Christmas', cursive; 
+   --font-sans: 'Quicksand', sans-serif;
+   --font-serif: 'Spicy Rice', serif, cursive;
 }
 
 body {
@@ -26,13 +43,23 @@ body {
    font-family:var(--font-sans);
 }
 
-h1,
-h2,
-h3,
+h1 {
+   font-family:var(--font-display);
+   color:var(--color-main-dark);
+}
+h2 {
+   font-family:var(--font-serif);
+   color:var(--color-accent-dark);
+}
+h3 {
+   font-family:var(--font-sans);
+   color:var(--color-text-secondary);
+}
 h4,
 h5,
 h6 {
    font-family:var(--font-sans);
+   color:var(--color-text-main);
 }
 
 a {
@@ -112,8 +139,8 @@ a:hover {
    padding:0.2em 0.5em;
 }
 .nav a:hover {
-   background-color:var(--color-main-medium);
-   color:var(--color-white);
+   background-color:var(--color-secondary-medium);
+   color:var(--color-text-secondary);
    text-decoration:none;
 }
 
@@ -135,8 +162,9 @@ a:hover {
    line-height:var(--header-height);
 }
 .navbar h1 {
-   font-family:var(--font-sans);
-   font-size:1em;
+   font-family:var(--font-display);
+   color:var(--color-white);
+   font-size:1.5em;
    margin:0;
 }
 
@@ -147,10 +175,9 @@ a:hover {
 
 
 .button {
-   background-color: #D2B4DE;
+   background-color: var(--color-secondary-medium);
    border-radius: 5px;
-   float:right;
-
+   padding:1em;
 }
 
 /* VIEW WINDOW */
@@ -194,13 +221,22 @@ a:hover {
       background-color:var(--color-neutral-medium);
    }
 
+   .card.light {
+      background-color:var(--color-neutral-light);
+   }
+
    .card.flat {
       padding:0;
    }
 
+   .card.rainbow {
+      background:linear-gradient(to bottom, #FDEDEC, #FDFBEC, #F5FDEC, #ECFDFD, #F5ECFD
+);
+   }
+
 /* WELL */
 .well {
-   background-color:var(--color-neutral-medium);
+   background-color:var(--color-main-light);
    padding:0.5em;
    border-radius:0.2em;
 }

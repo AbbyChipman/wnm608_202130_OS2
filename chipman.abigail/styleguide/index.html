@@ -7,11 +7,13 @@
 
 	<base href="/aau/wnm608/chipman.abigail/">
 
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Suez+One&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="lib/css/styleguide.css">
-      <link rel="stylesheet" href="lib/css/gridsystem.css">
-      <link rel="stylesheet" href="css/storetheme.css">
+   	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Quicksand&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lib/css/styleguide.css">
+    <link rel="stylesheet" href="lib/css/gridsystem.css">
+    <link rel="stylesheet" href="css/storetheme.css">
+
 </head>
 <body>
 	
@@ -35,6 +37,7 @@
 				<li><a href="styleguide/#typography">Typography</a></li>
 				<li><a href="styleguide/#color">Color</a></li>
 				<li><a href="styleguide/#grid">Grid</a></li>
+				<li><a href="styleguide/#button">Button</a></li>
 				<li><a href="styleguide/#card">Card</a></li>
 				<li><a href="styleguide/#navigations">Navigations</a></li>
 
@@ -42,57 +45,89 @@
 		</div>
 	</div>
 
+	<!-- TYPOGRAPHY SECTION -->
+
 	<div class="container" id="typography">
 		<div class="card soft">
 			<h2>Typography</h2>
+			<h3>Headings</h3>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h1>&lt;/h1></code>
 				</div>
-				<div class="flex-stretch"><h1>Heading 1</h1></div>
+				<div class="flex-stretch"></div>
+				<h1>Heading 1</h1>
 			</div>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h2>&lt;/h2></code>
 				</div>
-				<div class="flex-stretch"><h2>Heading 2</h2></div>
+				<div class="flex-stretch"></div>
+				<h2>Heading 2</h2>
 			</div>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h3>&lt;/h3></code>
 				</div>
-				<div class="flex-stretch"><h3>Heading 3</h3></div>
+				<div class="flex-stretch"></div>
+				<h3>Heading 3</h3>
 			</div>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h4>&lt;/h4></code>
 				</div>
-				<div class="flex-stretch"><h4>Heading 4</h4></div>
+				<div class="flex-stretch"></div>
+				<h4>Heading 4</h4>
 			</div>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h5>&lt;/h5></code>
 				</div>
-				<div class="flex-stretch"><h5>Heading 5</h5></div>
+				<div class="flex-stretch"></div>
+				<h5>Heading 5</h5>
 			</div>
 			<div class="display-flex flex-align-center">
 				<div class="flex-none">
 					<code>&lt;h6>&lt;/h6></code>
 				</div>
-				<div class="flex-stretch"><h6>Heading 6</h6></div>
+				<div class="flex-stretch"></div>
+				<h6>Heading 6</h6>
 			</div>
 		</div>
 	</div>
 
+	<!-- COLOR SECTION -->
+
 	<div class="container" id="color">
 		<div class="card soft">
 			<h2>Color</h2>
-			<div style="background-color:var(--color-neutral-light)">Background Color Neutral Light</div>
-			<div style="background-color:var(--color-neutral-medium)">Background Color Neutral Medium</div>
-			<div style="background-color:var(--color-neutral-dark); color: #ffffff">Background Color Neutral Dark</div>
-			</div>
+			<h3>Neutrals</h3>
+				<div style="background-color:var(--color-neutral-light)">Background Color Neutral Light</div>
+				<div style="background-color:var(--color-neutral-medium)">Background Color Neutral Medium</div>
+				<div style="background-color:var(--color-neutral-dark); color: #ffffff">Background Color Neutral Dark</div>
+	
+
+			<h3>Main Color</h3>
+				<div style="background-color:var(--color-main-light)">Background Color Main Light</div>
+				<div style="background-color:var(--color-main-medium)">Background Color Main Medium</div>
+				<div style="background-color:var(--color-main-dark); color: #ffffff">Background Color Main Dark</div>
+
+
+			<h3>Secondary Color</h3>
+				<div style="background-color:var(--color-secondary-light)">Background Color Secondary Light</div>
+				<div style="background-color:var(--color-secondary-medium)">Background Color Secondary Medium</div>
+				<div style="background-color:var(--color-secondary-dark); color: #ffffff">Background Color Secondary Dark</div>
+
+
+			<h3>Accent Color</h3>
+				<div style="background-color:var(--color-accent-light)">Background Color Accent Light</div>
+				<div style="background-color:var(--color-accent-medium)">Background Color Accent Medium</div>
+				<div style="background-color:var(--color-accent-dark); color: #ffffff">Background Color Accent Dark</div>
+
 		</div>
 	</div>
+
+	<!-- GRID SECTION -->
 
 	<div class="container" id="grid">
 		<div class="card soft">
@@ -156,6 +191,20 @@
 		</div>
 	</div>
 
+
+	<!-- BUTTON SECTION -->
+
+
+		<div class="container" id="button">
+			<div class="card soft">
+				<h2>Button</h2>
+				<h3>Standard Button</h3>
+				<button type="button" class="button">Add to Cart</button>
+			</div>
+		</div>
+
+	<!-- CARD SECTION -->
+
 	   <div class="container" id="card">
       <div class="card soft">
          <h2>Card</h2>
@@ -187,7 +236,7 @@
    </div>
 
 
-
+   <!-- NAVIGATIONS SECTION -->
 
    <div class="container" id="navigations">
       <div class="card soft">
@@ -232,8 +281,6 @@
             </ul>
          </nav>
 
-
-
          <h3>Navbar</h3>
       </div>
    </div>
@@ -254,11 +301,7 @@
          </nav>
       </div>
    </header>
-   
-   <div class="container">
-      <div class="card soft">
-      </div>
-   </div>
+
 
 
 </body>
