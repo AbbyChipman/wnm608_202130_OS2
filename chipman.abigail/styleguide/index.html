@@ -40,6 +40,8 @@
 				<li><a href="styleguide/#button">Button</a></li>
 				<li><a href="styleguide/#card">Card</a></li>
 				<li><a href="styleguide/#navigations">Navigations</a></li>
+				<li><a href="styleguide/#tables">Tables</a></li>
+				<li><a href="styleguide/#forms">Forms</a></li>
 
 			</ul>
 		</div>
@@ -236,6 +238,22 @@
    </div>
 
 
+
+<script>
+const makeNav = (classes='') => {
+   const links = ['home','store','about','cart'];
+   document.write(`
+   <div>
+   <nav class="${classes}">
+      <ul>
+         ${links.reduce((r,o,i,a)=>r+`<li><a href="#">${o}</a></li>`,'')}
+      </ul>
+   </nav>
+   </div>
+   `);
+}
+</script>
+
    <!-- NAVIGATIONS SECTION -->
 
    <div class="container" id="navigations">
@@ -245,15 +263,7 @@
          <h3>Basic Nav</h3>
          <div class="grid">
             <div class="col-4">
-               <nav class="nav">
-                  <!-- ul>li*4>a[href=#]>{Link $} -->
-                  <ul>
-                     <li><a href="#">Link 1</a></li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 3</a></li>
-                     <li><a href="#">Link 4</a></li>
-                  </ul>
-               </nav>
+               <script>makeNav("nav");</script>
             </div>
             <div class="col-8">
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptas, saepe accusamus beatae fugiat assumenda excepturi adipisci, nemo odio doloribus nobis iure architecto earum non aspernatur possimus dolores reprehenderit rerum perspiciatis animi eveniet ea eius omnis. Ratione, omnis, nihil corporis deserunt, deleniti laborum ad vel totam, quisquam quod esse animi.</p>
@@ -262,24 +272,10 @@
          </div>
 
          <h3>Flex Nav</h3>
-         <nav class="nav flex">
-            <ul>
-               <li><a href="#">Link 1</a></li>
-               <li><a href="#">Link 2</a></li>
-               <li><a href="#">Link 3</a></li>
-               <li><a href="#">Link 4</a></li>
-            </ul>
-         </nav>
+         <script>makeNav("nav flex");</script>
 
          <h3>Stretch Nav</h3>
-         <nav class="nav stretch">
-            <ul>
-               <li><a href="#">Link 1</a></li>
-               <li><a href="#">Link 2</a></li>
-               <li><a href="#">Link 3</a></li>
-               <li><a href="#">Link 4</a></li>
-            </ul>
-         </nav>
+         <script>makeNav("nav stretch");</script>
 
          <h3>Navbar</h3>
       </div>
@@ -288,21 +284,80 @@
    <header class="navbar">
       <div class="container display-flex flex-align-center">
          <div class="flex-none">
-            <h1>Title</h1>
+            <h1>Page Title</h1>
          </div>
          <div class="flex-stretch"></div>
-         <nav class="nav flex flex-none">
-            <ul>
-               <!-- li*3>a[href=#]>{Link $} -->
-               <li><a href="#">Link 1</a></li>
-               <li><a href="#">Link 2</a></li>
-               <li><a href="#">Link 3</a></li>
-            </ul>
-         </nav>
+         <div class="flex-none">
+   			<script>makeNav("nav flex");</script>
+         </div>
       </div>
    </header>
 
+ 	<div class="container">
+   		<div class="card soft">
+   			<h3>Breadcrumbs Nav</h3>
+   			<script>makeNav("crumbs")</script>
+   		</div>
+   	</div>
 
+<script>
+const makeTable = (classes='') => {
+   const head = ['ID','Name','Original Network','Year Debuted','No. of Seasons'];
+   const body = [
+      ['Twilight Zone',"CBS",'1959','5'],
+      ['Star Trek','NBC','1966','3'],
+      ['Battlestar Galactica',"ABC",'1978','1'],
+      ['Quantum Leap',"NBC",'1989','5'],
+      ['Once Upon a Time',"ABC",'2011','7'],
+   ];
+   document.write(`
+   <table class="${classes}">
+      <thead><tr>${head.reduce((r,o,i,a)=>r+`<th>${o}</th>`,'')}</tr></thead>
+      <tbody>
+         ${body.reduce((r,o,i,a)=>r+
+            `<tr>${[i+1,...o].reduce((r,o,i,a)=>r+`<td>${o}</td>`,'')}</tr>`
+         ,'')}
+      </tbody>
+   </table>
+   `)
+}
+</script>
 
+   	<div class="container" id="tables">
+   		<div class="card soft">
+   			<h2>Tables</h2>
+   			<h3>Standard Table</h3>
+		   	<script>makeTable("table")</script>
+   		
+   			<h3>Striped Table</h3>
+		   	<script>makeTable("table striped")</script>
+   		
+   			<h3>Lined Horizontal Table</h3>
+		   	<script>makeTable("table lined horizontal")</script>
+
+		   	<h3>Lined Vertical Table</h3>
+		   	<script>makeTable("table lined vertical")</script>
+
+		   	<h3>Lined Both Table</h3>
+		   	<script>makeTable("table lined horizontal vertical")</script>
+
+		   	<h3>Outlined Table</h3>
+		   	<script>makeTable("table lined outline")</script>
+
+		   	<h3>Outlined Striped Table</h3>
+		   	<script>makeTable("table lined outline striped")</script>
+
+		   	<h3>Lined Table</h3>
+		   	<script>makeTable("table outline lined all")</script>
+   		</div>
+	</div>
+
+   	<div class="container">
+   		<div class="card soft">
+   			<h2>Forms</h2>
+
+   			<form action="" method=""></form>
+   		</div>
+   	</div>
 </body>
 </html>
