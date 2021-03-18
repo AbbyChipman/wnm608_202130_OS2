@@ -12,18 +12,18 @@
    --color-main-light:#e2c7ef;
    --color-main-medium:#d189ef;
    --color-main-dark:#6a1787;
-
-   --color-accent-light:#f7e2b7;
-   --color-accent-medium:#ffcc42;
-   --color-accent-dark:#bf9932;
+   --color-text-main:#2e0a3a;
 
    --color-secondary-light:#eef9d7;
    --color-secondary-medium:#caea83;
    --color-secondary-dark:#80a333;
-
-   --color-text-main:#2e0a3a;
-   --color-text-accent:#403311;
    --color-text-secondary:#233009;
+
+   --color-accent-light:#f7e2b7;
+   --color-accent-medium:#ffcc42;
+   --color-accent-dark:#bf9932;
+   --color-text-accent:#403311;
+
 
    --color-white:#fff;
    --color-black:#111;
@@ -53,12 +53,13 @@ h2 {
 }
 h3 {
    font-family:var(--font-sans);
-   color:var(--color-text-secondary);
+   color:var(--color-secondary-dark);
 }
 h4,
 h5,
 h6 {
    font-family:var(--font-sans);
+   font-weight:normal;
    color:var(--color-text-main);
 }
 
@@ -69,6 +70,10 @@ a {
 }
 a:hover {
    text-decoration:underline;
+}
+
+code {
+   padding-right: 0.5em;
 }
 
 /* RESPONSIVE*/
@@ -85,23 +90,18 @@ a:hover {
       background-size:cover;
       background-position:center;
       background-attachment:fixed;
-      height:20 vh;
+      height:10 vh;
    }
 }
 
 
 /* LAYOUT CLASSES */
 .container {
-   max-width:1000px;
+   max-width:1200px;
    margin-left:auto;
    margin-right:auto;
 }
 
-.product-container {
-   max-width:300px;
-   margin-left:auto;
-   margin-right:auto;
-}
 
 .hidden { display:none; }
 
@@ -188,6 +188,7 @@ a:hover {
    background-color: var(--color-secondary-medium);
    border-radius: 5px;
    padding:1em;
+   -webkit-appearance:none;
 }
 
 /* VIEW WINDOW */
@@ -199,7 +200,7 @@ a:hover {
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
-   height:25vh;
+   height:15vh;
 }
 
 
@@ -220,7 +221,7 @@ a:hover {
       box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
    }
    .card.hard {
-      border-radius:0.2em;
+      border-radius:0.3em;
       border:2px solid var(--color-neutral-medium);
    }
    .card.dark {
@@ -242,6 +243,13 @@ a:hover {
    .card.rainbow {
       background:linear-gradient(to bottom, #FDEDEC, #FDFBEC, #F5FDEC, #ECFDFD, #F5ECFD
 );
+   }
+
+   .card.section {
+      padding:0.5em;
+      margin-top:0.5em;
+      margin-bottom:0.5em;
+      border-radius:0.5em;
    }
 
 
@@ -278,9 +286,213 @@ a:hover {
       border:1px solid var(--color-neutral-medium);
    }
 
+
+
+/* HORIZONTAL RULE*/
+
+   hr {
+      border-width:0;
+      margin:1em 0;
+      border-bottom:1px solid var(--color-main-dark);
+   }
+
+   .dash {
+      border:1px dashed var(--color-main-dark);
+   }
+
+   .dash-thick {
+      border:3px dashed var(--color-main-dark);
+   }
+
+   .double {
+      border-top: 1px solid var(--color-main-dark);
+      border-bottom: 1px solid var(--color-main-dark);
+      padding: 2px 0px 2px 0px;
+   }
+
+   .thick {
+      margin:1em 0;
+      border-bottom:3px solid var(--color-main-dark);
+   }
+
+   .double-thick {
+      border-top: 3px solid var(--color-main-dark);
+      border-bottom: 3px solid var(--color-main-dark);
+      padding: 2px 0px 2px 0px;
+   }
+
 /* WELL */
+
 .well {
    background-color:var(--color-main-light);
    padding:0.5em;
    border-radius:0.2em;
+}
+
+
+/* FORMS */
+
+.form-control {
+   margin:1em 0;
+}
+
+.form-input {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:transparent;
+   border:1px solid var(--color-main-dark);
+   padding:0.5em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   -webkit-appearance:none;
+}
+
+.form-select {
+   position:relative;
+}
+
+.form-select>select {
+   display:inline-block;
+   width:100%;
+   border-width:1px;
+   background-color:transparent;
+   padding:0.5em 2em 0.5em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   position:relative;
+   overflow:hidden;
+   -webkit-appearance:none;
+}
+
+.form-select::after {
+   position:absolute;
+   top:50%;
+   right:1em;
+   content:'▼';
+   font-family:Arial;
+   font-size: 0.9em;
+   color:var(--color-secondary-dark);
+   pointer-events: none;
+   transform: translateY(-50%);
+}
+
+.form-button+.form-button,
+.form-input+.form-input {
+   margin-top:0.2em;
+}
+
+.form-input-lined {
+   display:inline-block;
+   width:100%;
+   padding:0.5em 1em;
+   font:inherit;
+   outline:0;
+   background-color:transparent;
+   border-radius:0;
+   border-width:0;
+   border-bottom:1px solid var(--color-text-accent);
+   -webkit-appearance:none;
+}
+
+.form-input-lined:focus {
+   border-bottom-color:var(--color-main-medium);
+}
+
+.form-label {
+   margin:0.5em 0;
+   display:inline-block;
+   font-size:0.8em;
+   color:var(--color-main-dark);
+}
+
+.form-button {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-main-dark);
+   color:var(--color-white);
+   padding:1em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   -webkit-appearance:none;
+}
+
+.form-button:hover {
+   text-decoration:none;
+   box-shadow:0 0 10px var(--color-accent-medium);
+}
+
+.form-button:active {
+   background-color:var(--color-accent-medium);
+   color:var(--color-white);
+}
+
+.form-button.sell {
+   background-color:var(--color-secondary-dark);
+   color:var(--color-white);
+   -webkit-appearance:none
+}
+
+.form-button.sell:active {
+   background-color:var(--color-secondary-medium);
+   color:var(--color-white);
+}
+
+.round-button {
+   display:inline-block;
+   width:100px;
+   height:100px;
+   border-width:0;
+   background-color:red;
+   color:white;
+   padding:1em 1em;
+   border-radius:50%;
+   font:inherit;
+   outline:0;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   -webkit-appearance:none;
+}
+
+.round-button:active {
+   background-color:var(--color-accent-medium);
+   color:var(--color-white);
+}
+
+.hotdog {
+   display:inline-flex;
+   width:100%;
+   border-width:0px;
+   background-color:var(--color-accent-light);
+   padding:0.5em 2em;
+   border-radius:2em;
+   font:inherit;
+   outline:0;
+   -webkit-appearance:none;
+}
+
+.hotdog input {
+   display:inline-block;
+   width:100%;
+   border-width:0px;
+   font:inherit;
+   outline:0;
+   background-color:var(--color-accent-light);
+}
+
+/* ICON */
+.icon {
+   width:1em;
+   height:1em;
+   vertical-align: middle;
 }

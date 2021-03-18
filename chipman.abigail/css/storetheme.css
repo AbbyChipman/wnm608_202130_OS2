@@ -7,25 +7,87 @@
    --color-main-medium:#d189ef;
    --color-main-dark:#6a1787;
 
-   --color-accent-light:#f7e2b7;
-   --color-accent-medium:#ffcc42;
-   --color-accent-dark:#bf9932;
-
    --color-secondary-light:#eef9d7;
    --color-secondary-medium:#caea83;
    --color-secondary-dark:#80a333;
 
+   --color-accent-light:#f7e2b7;
+   --color-accent-medium:#ffcc42;
+   --color-accent-dark:#bf9932;
+
    --color-text-main:#2e0a3a;
-   --color-text-secondary:#403311;
-   --color-text-accent:#233009;
+   --color-text-secondary:#233009;
+   --color-text-accent:#403311;
+   
 
    --color-white:#fff;
    --color-black:#111;
+
+   --font-display: 'Mountains of Christmas', cursive; 
+   --font-sans: 'Quicksand', sans-serif;
+   --font-serif: 'Spicy Rice', serif, cursive;
 }
 
 body {
 	background:var(--color-main-light);
 }
+
+
+/* PRODUCT IN LIST */
+
+.product {
+	margin:0;
+	/*padding:1em;*/
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	border-radius:1em;
+	position:relative;
+	overflow:hidden;
+	background-color:var(--color-white);
+	display:inline-block;
+	transition:all 0.3s;
+	font-weight:normal;
+}
+
+.product:hover {
+	text-decoration: none;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.product-image img {
+	max-width:100%;
+	vertical-align: middle;
+}
+
+.product-caption {
+	padding:1em;
+}
+
+.product-price {
+	font-size:1.3em;
+	font-family:var(--font-sans);
+	font-weight:bolder;
+	text-decoration:none;
+}
+
+.product-title {
+	font-size:0.9em;
+	text-decoration:none;
+}
+
+/* COLOR CHIP */
+
+.color-chip {
+	margin:0.2em;
+	text-align:center;
+}
+
+.color-label {
+	font-weight:bold;
+	text-align:center;
+}
+
+/* NAV */
 
 .navbar {
 	background: linear-gradient(to left, #6a1787, #2e0a3a);
