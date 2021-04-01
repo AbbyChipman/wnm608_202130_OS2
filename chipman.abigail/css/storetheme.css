@@ -3,33 +3,35 @@
    --color-neutral-medium:#8c8894;
    --color-neutral-dark:#423f4a;
 
-   --color-main-light:#e2c7ef;
-   --color-main-medium:#d189ef;
-   --color-main-dark:#6a1787;
+   --color-main-light:#ede3f0;
+   --color-main-medium:#792a84;
+   --color-main-dark:#4c1c54;
+   --color-main-tone:#7d5f82;
 
-   --color-secondary-light:#eef9d7;
-   --color-secondary-medium:#caea83;
-   --color-secondary-dark:#80a333;
+   --color-secondary-light:#f8eaf4;
+   --color-secondary-medium:#c658a5;
+   --color-secondary-dark:#512547;
+   --color-secondary-tone:#99728e;
 
-   --color-accent-light:#f7e2b7;
-   --color-accent-medium:#ffcc42;
-   --color-accent-dark:#bf9932;
+   --color-accent-light:#f8f9e5;
+   --color-accent-medium:#d7df27;
+   --color-accent-dark:#373917;
+   --color-accent-tone:#959768;
 
-   --color-text-main:#2e0a3a;
-   --color-text-secondary:#233009;
-   --color-text-accent:#403311;
-   
+   --color-text-light:#8ca19b;
+   --color-text-dark:#1c4436;
+
 
    --color-white:#fff;
    --color-black:#111;
 
-   --font-display: 'Mountains of Christmas', cursive; 
+
+   --font-display: 'Mountains of Christmas', sans-serif; 
    --font-sans: 'Quicksand', sans-serif;
-   --font-serif: 'Spicy Rice', serif, cursive;
 }
 
 body {
-	background:var(--color-main-light);
+	background:var(--color-secondary-light);
 }
 
 
