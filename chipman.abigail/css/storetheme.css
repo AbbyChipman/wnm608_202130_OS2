@@ -66,6 +66,7 @@ body {
 }
 
 .product-price {
+	padding-left:1em;
 	font-size:1.3em;
 	font-family:var(--font-sans);
 	font-weight:bolder;
@@ -73,8 +74,30 @@ body {
 }
 
 .product-title {
+	padding-left:1em;
 	font-size:0.9em;
 	text-decoration:none;
+}
+
+.product-button {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-main-dark);
+   color:var(--color-white);
+   padding: 1em 1em;
+   font:inherit;
+   outline:0;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   -webkit-appearance:none;
+}
+
+.product-button:hover {
+   text-decoration:none;
+   font-weight: bold;
 }
 
 /* COLOR CHIP */
@@ -92,6 +115,6 @@ body {
 /* NAV */
 
 .navbar {
-	background: linear-gradient(to left, #6a1787, #2e0a3a);
+	background: linear-gradient(to right, #4c1c54, #792a84);
 	color:var(--color-white);
 }

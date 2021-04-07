@@ -32,7 +32,7 @@
    --color-black:#111;
  
 
-   --header-height:4rem;
+   --header-height:3rem;
 
 
    --font-display: 'Mountains of Christmas', sans-serif; 
@@ -81,6 +81,11 @@ code {
    padding-right: 0.5em;
 }
 
+.index-header {
+   font-size: 400%;
+   color:var(--color-white);
+}
+
 /* RESPONSIVE*/
 
 @media (max-width: 500px) {
@@ -94,10 +99,11 @@ code {
 
       background-size:cover;
       background-position:center;
-      background-attachment:fixed;
+      background-attachment:scroll;
       height:10 vh;
    }
 }
+
 
 
 /* LAYOUT CLASSES */
@@ -147,8 +153,8 @@ code {
    padding:0.2em 0.5em;
 }
 .nav a:hover {
-   background-color:var(--color-main-medium);
-   color:var(--color-white);
+   background-color:var(--color-accent-light);
+   color:var(--color-main-dark);
    text-decoration:none;
 }
 
@@ -172,7 +178,7 @@ code {
 
 /* Navbar */
 .navbar {
-   background-color:var(--color-neutral-dark);
+   background-image:url(aau/wnm608/chipman.abigail/img/glitter-background.jpg);
    color:var(--color-white);
    line-height:var(--header-height);
 }
@@ -196,18 +202,32 @@ code {
    -webkit-appearance:none;
 }
 
+.footer {
+   flex-shrink:0;
+   padding:20px;
+}
+
 /* VIEW WINDOW */
 
-.view-window {
+.view-window-small {
+   position:relative;
+   overflow:hidden;
+
+   background-size:cover;
+   background-position:center;
+   background-attachment:scroll;
+   height:15vh;
+}
+
+.view-window-large {
    position:relative;
    overflow:hidden;
 
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
-   height:15vh;
+   height:70vh;
 }
-
 
 /* CARD */
 
@@ -255,6 +275,7 @@ code {
       margin-top:0.5em;
       margin-bottom:0.5em;
       border-radius:0.5em;
+      opacity: 0.8;
    }
 
 
@@ -441,13 +462,13 @@ code {
 }
 
 .form-button.sell {
-   background-color:var(--color-secondary-dark);
+   background-color:var(--color-accent-dark);
    color:var(--color-white);
    -webkit-appearance:none
 }
 
 .form-button.sell:active {
-   background-color:var(--color-secondary-medium);
+   background-color:var(--color-accent-medium);
    color:var(--color-white);
 }
 
