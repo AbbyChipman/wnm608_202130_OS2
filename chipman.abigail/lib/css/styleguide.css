@@ -362,6 +362,10 @@ code {
    margin:1em 0;
 }
 
+.form-label {
+   font-weight: bold;
+}
+
 .form-input {
    display:inline-block;
    width:100%;

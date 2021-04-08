@@ -23,7 +23,7 @@
    			</div>
    </div>
    <div class="view-window-small display-flex flex-align-center flex-justify-center" style="background-image:url(img/glitter-background.jpg)">
-   		<h1 id="resin" class="card section rainbow">FEATURED PRODUCTS</h1>
+   		<h1 class="card section rainbow">FEATURED PRODUCTS</h1>
 	</div>
    <br>
 
@@ -31,11 +31,24 @@
 
         <div class="grid gap product-list">
                
-        	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        	<div class="card soft col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <H1>Check out our new designs!</H1>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum fugit minima dolor a sint labore, voluptates consequuntur quia placeat doloribus impedit repudiandae tempore accusamus fuga veniam dignissimos temporibus eveniet nihil porro, aliquid id iure. Adipisci dolore ad magni, minus totam.</p>	
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                <?php include "parts/product.php" ?>
             </div>
 
-           <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <?php include "parts/product.php" ?>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <?php include "parts/product.php" ?>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                <?php include "parts/product.php" ?>
             </div>
 

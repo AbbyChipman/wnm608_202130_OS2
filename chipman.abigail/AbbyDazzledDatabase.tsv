@@ -1,0 +1,15 @@
+id	date_create	date_modify	title	category	images	thumbnail	price	descriptions	quantity
+1	3/15/21	3/31/21	Resin Notebook - 3 x 5	Notebooks	notebook_resin_small.jpg	Tnotebook_resin_small.jpg	$7.50 	3 by 5 inch notebook; cover made of resin	10
+2	3/15/21	3/31/21	Resin Notebook - 4 x 6	Notebooks	notebook_resin_medium.jpg	Tnotebook_resin_medium.jpg	$10.00 	4 by 6 inch notebook; cover made of resin	10
+3	3/15/21	3/31/21	Clay Notebook - 3 x 5	Notebooks	notebook_clay_small.jpg	Tnotebook_clay_small.jpg	$8.00 	3 by 5 inch notebook; cover made of polymer clay	10
+4	3/15/21	3/31/21	Clay Notebook - 4 x 6	Notebooks	notebook_clay_medium.jpg	Tnotebook_clay_medium.jpg	$11.00 	4 by 6 inch notebook; cover made of polymer clay	10
+5	3/18/21	3/31/21	Resin Bookmark - 3 inch	Bookmarks	bookmark_resin_3inch.jpg	Tbookmark_resin_3inch.jpg	$3.00 	3 inch bookmark made of resin	10
+6	3/18/21	3/31/21	Resin Bookmark - 6 inch	Bookmarks	bookmark_resin_6inch.jpg	Tbookmark_resin_6inch.jpg	$5.00 	6 inch bookmark made of resin	10
+7	3/18/21	3/31/21	Clay Bookmark - 3 inch	Bookmarks	bookmark_clay_3inch.jpg	Tbookmark_clay_3inch.jpg	$3.50 	3 inch bookmark made of polymer clay	10
+8	3/18/21	3/31/21	Clay Bookmark - 6 inch	Bookmarks	bookmark_clay_6inch.jpg	Tbookmark_clay_6inch.jpg	$5.50 	6 inch bookmark made of polymer clay	10
+9	3/18/21	3/31/21	Resin Ink Pen - Non-refillable	Ink Pens	pen_resin_non.jpg	Tpen_resin_non.jpg	$5.00 	Molded resin ink pen - non-refillable	10
+10	3/18/21	3/31/21	Resin Ink Pen - Refillable	Ink Pens	pen_resin_refill.jpg	Tpen_resin_refill.jpg	$7.50 	Molded resin ink pen - refillable	10
+11	3/20/21	3/31/21	Clay Ink Pen - Non-refillable	Ink Pens	pen_clay_non.jpg	Tpen_clay_non.jpg	$6.00 	Ink Pen with Polymer Clay barrel - non-refillable	10
+12	3/21/21	3/31/21	Clay Ink Pen - Refillable	Ink Pens	pen_clay_refill.jpg	Tpen_clay_refill.jpg	$8.50 	Ink Pen with Polymer Clay barrel - refillable	10
+13	3/30/21	4/4/21	Stationery Set - Resin	Sets	resin_set.jpg	Tresin_set.jpg	$12.00 	"Resin notebook, bookmark and pen"	10
+14	3/30/21	4/4/21	Stationery Set - Clay	Sets	clay_set.jpg	Tclay_set.jpg	$14.00 	"Clay notebook, bookmark and pen"	10

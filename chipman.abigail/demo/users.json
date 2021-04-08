@@ -1,0 +1,32 @@
+[
+   {
+      "name":"Lauren St. David",
+      "type":"Teacher",
+      "email":"monkeebabe@gmail.com",
+      "classes":[608,617,820]
+   },
+   {
+      "name":"Mike Nesmith",
+      "type":"Student",
+      "email":"nezmerized@gmail.com",
+      "classes":[622,606,608]
+   },
+   {
+      "name":"Peter Tork",
+      "type":"Customers",
+      "email":"torkelsonp@hotmail.com",
+      "classes":[608,617,820]
+   },
+   {
+      "name":"Micky Dolenz",
+      "type":"Student",
+      "email":"eldolenzio@art.edu",
+      "classes":[608,617,820]
+   },
+   {
+      "name":"Davy Jones",
+      "type": "Student",
+      "email": "foxydavy@gmail.com",
+      "classes":[608]
+   }
+]
