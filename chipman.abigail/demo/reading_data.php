@@ -50,9 +50,10 @@ $users_array = file_get_json("users.json");
          <?php
 
          for($i=0; $i<count($users_array); $i++) {
-            echo "<li>
-            <strong>$users_array[$i]->name</strong>
-            </li>";
+            echo "<li><div class='display-flex'>
+               <strong class='flex-stretch'>{$users_array[$i]->name}</strong>
+               <span>{$users_array[$i]->email}</span>
+               </div></li>";
          }
 
          ?>

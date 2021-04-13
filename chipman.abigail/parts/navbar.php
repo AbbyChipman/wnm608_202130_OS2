@@ -1,7 +1,7 @@
 <header class="navbar">
    		<div class="container display-flex flex-align-center flex-justify-center">
       	<div class="flex-none">
-        	<img src="img/logoWhiteSmall.png" alt="AbbyDazzled Logo">
+          <a href="index.php"><img src="img/logoWhiteSmall.png" alt="AbbyDazzled Logo"></a>
       	</div>
       	<div class="flex-stretch"></div>
       	<nav class="flex-none nav flex">

@@ -13,9 +13,9 @@
 	<?php include "parts/navbar.php" ?>
 
 	<div class="container card soft">
-		<h2>
-			This is a form ;D
-		</h2>
+		<h1>Shopping Cart</h1>
+		<h2>There will be a form here later</h2>
+		<div></div>
 		<div>This is </div>
 		<a href="checkout.php" style="color:var(--color-secondary-medium)">Checkout</a>
 	</div>

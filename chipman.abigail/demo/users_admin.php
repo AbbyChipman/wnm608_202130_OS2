@@ -26,33 +26,20 @@ echo <<<HTML
 </nav>
 <div>
    <h2>$user->name</h2>
-   <div>
-      <strong>Type</strong>
-      <span>$user->type</span>
-   </div>
-   <div>
-      <strong>Email</strong>
-      <span>$user->email</span>
-   </div>
-   <div>
-      <strong>Classes</strong>
-      <span>$classes</span>
-   </div>
 </div>
 
 <div>
- 	<h3>Edit Data:</h3>
  	<form action="">
  		<label for="name" class="form-label">Name:</label>
- 		<input type="text" width="50%" id="name" placeholder=$user->name>
+ 		<input type="text" size="30" id="name" placeholder=$user->name>
  		<br>
 
  		<label for="type" class="form-label">Type:</label>
- 		<input type="text" id="type" placeholder=$user->type>
+ 		<input type="text" size="30" id="type" placeholder=$user->type>
  		<br>
 
  		<label for="email" class="form-label">Email:</label>
- 		<input type="text" id="email" placeholder=$user->email>
+ 		<input type="text" size="30" id="email" placeholder=$user->email>
  		<br>
 
  		<label for="classes" class="form-label">Classes:</label>

@@ -5,6 +5,6 @@
    	<figcation class="product-caption">
       <div class="product-price">&dollar;price</div>
       <div class="product-title">Quick Description</div>
-   	  <button class="product-button">Add To Cart</button>
+   	  <button class="product-button"><a href="product_added_to_cart.php">Add to Cart</a></button>
 	</figcation>
 </figure>
