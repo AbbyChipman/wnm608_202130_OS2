@@ -16,6 +16,7 @@ $users = file_get_json("users.json");
 
 function showUserPage($user) {
 
+
 $classes = implode(", ", $user->classes);
 
 echo <<<HTML
@@ -25,13 +26,13 @@ echo <<<HTML
    </ul>
 </nav>
 <div>
-   <h2>$user->name</h2>
+   <h1>$user->name</h1>
 </div>
 
 <div>
- 	<form action="">
+ 	<form action="users.json" method="post">
  		<label for="name" class="form-label">Name:</label>
- 		<input type="text" size="30" id="name" placeholder=$user->name>
+ 		<input type="text" size="30" id="name" placeholder='$user->name'>
  		<br>
 
  		<label for="type" class="form-label">Type:</label>
@@ -43,17 +44,17 @@ echo <<<HTML
  		<br>
 
  		<label for="classes" class="form-label">Classes:</label>
- 		<input type="text" id="classes" placeholder=$classes>
+ 		<input type="text" id="classes" placeholder='$classes'>
  		<br>
  		<br>
 
- 		<button type="button" class="form-button" style="width:25%">Update Information
- 		</button>
+ 		<input type="submit" class="form-button" style="width:25%" value="Update Information">
 
  	</form>
 </div>
 HTML;
 }
+
 
 
 
@@ -105,8 +106,6 @@ HTML;
          <?php
          }
          ?>
-
-        
       </div>
    </div>
 </body>
