@@ -30,7 +30,7 @@ echo <<<HTML
 </div>
 
 <div>
- 	<form action="users.json" method="post">
+ 	<form action="">
  		<label for="name" class="form-label">Name:</label>
  		<input type="text" size="30" id="name" placeholder='$user->name'>
  		<br>
