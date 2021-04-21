@@ -5,7 +5,7 @@ include "../lib/php/functions.php";
 $users = file_get_json("users.json");
 
 // pretty_dump($_SERVER);
-// pretty_dump($_GET);
+// pretty_dump([$_GET,$_POST]);
 
 
 
